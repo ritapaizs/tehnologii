@@ -9,13 +9,9 @@ body
   background-image: linear-gradient(to bottom right, #FCBDB8,#CB8FA9,#644B9E);
   position:relative;
 }
-#grad {
-  
-}
+
 .container
 {
-
- 
   display: flex;
     margin-top:10%;
     height:380px;
@@ -56,26 +52,96 @@ body
 {
   background-color: #644B9E;
 }
-  
+  h1,p,h2, h3,li
+  {
+    color:white;
+
+
+  }
+  a, blockquote
+  {
+    color:green;
+  }
+  ul {
+  list-style: none;
+
+}
+  li::before {
+  content: "• ";
+  color: red; /* or whatever color you prefer */
+}
 .grid-container {
     display: grid;
+    color:white;
+    margin:auto;
     grid-column-gap: 50px ;
-    background-color: aquamarine;
-        font-family: "Arial", Times, serif;
+    font-family: "Coctail Shaker", Coctail Shacker,cursive;
+   
+  }
+  .grid-container2 {
+    display: grid;
+    color:white;
+    margin:auto;
+    font-family: "Coctail Shaker", Coctail Shacker,cursive;
+   
+  }
+  .legion
+  {
+ background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-image: url("legion.jpg");
   }
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
+     color:white;
+
+    background-color: black;
+    background: rgba(0,0,0, 0.75);
+    border: 1px solid #304C23;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px  #304C23;
+    padding: 40px;
     text-align: left;
   }
-  .grid-item1 {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    .grid-item1
+  {
+    height:1020px;
+    color:white;   
+     position: fixed;
+    background: rgba(0,0,0, 0.8);
+    border: 1px solid #304C23;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px  #304C23;
+    padding:20px;
+    text-align: left;
+  }
+  .row
+  {
+    padding:30px;
+  }
+  .responsive
+  {
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    border: 1px solid #304C23;
+    width: 100%;
+    height: auto;
+    margin:auto;
+}
+  .audio
+  {
+    border: 1px solid rgba(0, 0, 0, 0.75); 
+    border-radius: 25px;
+    border: 1px solid #304C23;
+     width: 100%;
+    margin:auto;
+  
+  }
+  .box
+  {
+    background-color:black;
+    
   }
   label
   {
@@ -83,6 +149,7 @@ body
   }
   #pozesiaudio
   {
+
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
   }
