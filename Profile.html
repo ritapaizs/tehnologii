@@ -1,14 +1,45 @@
 <html>
-    <header>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+            <link rel="stylesheet" type="text/css" href="tehnologii.css">
         <title>Profile</title>
-    </header>
+    </head>
     <body>
-        <Form Method="POST">
-            <input type="text" placeholder="username" name="form1">
-            <input type="email" placeholder="unknown@gmail.com" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-            <input type='radio' value="default" name="radio">
-            <input type="password" name="password" placeholder="password">
-            <input type="submit" name="GO">
+        <div class="container" id="containerM">
+        
+      
+            <Form Method="POST" class = "Form">
+                 <!--   <div id="text">
+                    
+                    <p id="text1">Nume de utilizator<br>
+                    <p id="text1">Adresa de e-mail<br>
+                    <p id="text1">Introduceti parola</p>
+                     </div> -->
+                <div class = "col-md-12" id="fields">
+                         <label for="uname"><b>Introduceti Numele</b></label>
+                        <input type="text" placeholder="username" name="uname" id="t2">
+                       
+                        <label for="mail"><b>Adresa de mail</b></label>
+                        <input type="email"  id="t2" placeholder="unknown@gmail.com" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                     
+                         <label for="psw"><b>Parola</b></label>
+                         <input type="password" name="psw" placeholder="Password" id="t2">
+                
+                 <label>
+                 <input type="Radio" value="default" name="remember"> Remember me
+                </label>
+              
+              
+        </div>
+             <br>
+                  
+                <input type="submit" class="btn btn-light" name="GO" value="Login">
+
         </Form>
+   
+</div>
     </body>
+ 
 </html>
