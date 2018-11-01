@@ -1,0 +1,112 @@
+
+#asd
+{
+  width:80%;
+
+}
+body
+{
+  background-image: linear-gradient(to bottom right, #FCBDB8,#CB8FA9,#644B9E);
+  position:relative;
+}
+#grad {
+  
+}
+.container
+{
+
+ 
+  display: flex;
+    margin-top:10%;
+    height:380px;
+    width:25%;
+    border: 1px solid grey;
+    border-radius: 25px;
+    background-color: white;
+    padding: 20px;
+     box-shadow: 5px 5px 15px  #644B9E;
+    text-align: center; 
+}
+#t2
+{
+    width:100%;
+    height: 8%;
+    border: 1px solid grey;
+    background-color:#FCBDB8;
+}
+.Form
+{
+  position: relative;
+}
+.btn-light
+{
+  position: absolute;
+  bottom: 0px;
+  right:0px;
+    width:100%;
+    height:15%;
+    border: 1px solid grey;
+    background-color: #CB8FA9;
+    border-radius: 8px;
+      
+
+   
+}
+.btn-light:hover
+{
+  background-color: #644B9E;
+}
+  
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px ;
+    background-color: aquamarine;
+        font-family: "Arial", Times, serif;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+  }
+  .grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  label
+  {
+      float:left;
+  }
+  #pozesiaudio
+  {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+  table {
+    text-align:center;
+    border-spacing: 0.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+     width:300px;
+     height:200px;
+    margin:auto;
+    background-color: aquamarine;
+  }
+  body
+  {
+      background-color: beige;
+  }
+  td, th {
+    border: 2px solid black;
+    padding: 0.5rem;
+    text-align: left;
+  }
+th:nth-child(1) { background: hsl(150, 50%, 50%); }
+th:nth-child(2) { background: hsl(160, 60%, 50%); }
+th:nth-child(3) { background: hsl(170, 70%, 50%); }
+td:nth-child(1) { background: hsl(180, 80%, 50%); }
+td:nth-child(2) { background: hsl(190, 90%, 50%); }
+td:nth-child(3) { background: hsl(200, 99%, 50%); }
