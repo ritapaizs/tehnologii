@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<h2>JavaScript in Body</h2>
+
+	<p id="demo"></p>
+
+		<script>
+		// 1
+			var str = "rita nu stie exact ce e cu split >.<";
+			function reverseString(str)
+			{
+				 var res = str.split(" ");
+				 var reverseArray = res.reverse(); 
+				// return reverseArray;
+				var joinArray = reverseArray.join(" ");
+				return joinArray;
+			}
+			var x=reverseString(str);
+		//	document.write(reverseString(str));
+			document.write(x);
+
+
+		// 2
+		
+		var str2 = "rita is trying :)";
+		var res2 = str2.substring(0,8);
+		document.write("<br>"+res2);
+
+
+		// 3
+		document.write("<br><br>");
+			var x = 22;
+
+			var ok = false;
+			if (x % 3 == 0 && x % 7 == 0)
+			{
+				ok = true;
+			  document.write(ok);
+			}
+			else
+				{
+					document.write(ok);
+				}
+
+
+
+			// 4	
+
+
+			document.write("<br><br>");
+			var y = "rita";
+		
+			//	document.write(isNan(y));
+			//	document.write(isNan(x));
+
+			 if (isNaN(x)) {
+			   document.write('Not a Number!');
+			  }
+			  else
+			  	document.write("it's a number <br>");
+			
+			
+			// 5
+			var a = [1,2,3];
+			var sum=0; 
+		
+				for(var i=0; i<a.length; i++)
+				{
+					sum += a[i];
+					document.write(a[i]+"<br>");
+				}
+			document.write(a+"<br>");
+			document.write("suma elementelor vectorului este "+sum);
+
+			
+			// 6
+
+			o = new Object();
+			o.property1 = "red";
+			console.log("property: "+o.hasOwnProperty('property1')); 
+			
+			function checkProp
+			{
+
+			}
+			console.log(checkProp({red: "red", green: "green", white: "white"}, "green")); //output true
+
+			</script>
+	</body>
+</html>
