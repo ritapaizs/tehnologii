@@ -3,7 +3,6 @@
  <header>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="lab7.css">
   </header>
 	<body>
 		<!-- //6 -->
@@ -68,6 +67,33 @@
 		pos = 8;
 		elem.style.left = pos+'px';
 	}
+	//5 
+	function yieldingLoop(count, chunksize, callback, finished) {
+    var i = 0;
+    (function chunk() {
+        var end = Math.min(i + chunksize, count);
+        for ( ; i < end; ++i) {
+            callback.call(null, i);
+        }
+        if (i < count) {
+            setTimeout(chunk, 0);
+        } else {
+            finished.call(null);
+        }
+    })();
+}
+ let a = 0;
+yieldingLoop(1000000, 1000, function(i) {
+    setTimeout(() => console.log('Blocked!'), 1000);
+}, function() {
+    let a = 0;
+        for (let i = 0; i < 1000; i++) {
+            for(let j = 0; j < i * 10000; j++) {
+                if (i < j)
+                    a++;
+                }
+            }
+});
 
 	</script>
 
