@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <header>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="lab7.css">
+  </header>
+	<body>
+		<!-- //6 -->
+		<style>
+		#animate
+		{
+			position: absolute;
+		}
+	</style>
+	<button onclick="myMove()"> >> </button>
+	<button onclick="Reset()"> Reset </button>
+		<div id = "container">
+			<div>		
+				<input type="text" id="animate" placeholder="text" name="move me">
+			</div>
+		</div>
+
+
+		<script>
+//1
+		var a = 1;
+		function a() {}
+		function b() {
+		a = 10;
+		return;
+		}
+		b();
+		console.log('a=' + a);
+
+		//2
+		for (var i = 0; i < 5; i++) 
+		{
+		
+			(function(i)
+			{
+				setTimeout(function(){
+				 console.log(i);
+				},i*1000);
+			})(i);
+		}
+		// 3
+		setTimeout(function(){	
+			try {	
+			throw 'example';		
+			throw new Exception('example');			
+				} catch (err) {
+				console.log("lerooooy");
+				console.log(err);				
+			}
+		}, 1000)
+
+ // 6
+ 	var pos = 0;
+ 	var elem = document.getElementById("animate"); 
+	function myMove() 
+	{ 
+ 	pos+=20; 
+	elem.style.left = pos + 'px';     
+	}
+	function Reset()
+	{
+		pos = 8;
+		elem.style.left = pos+'px';
+	}
+
+	</script>
+
+		
+	</body>
+
+	</html>
