@@ -77,15 +77,13 @@
 			
 			// 6
 
-			o = new Object();
-			o.property1 = "red";
-			console.log("property: "+o.hasOwnProperty('property1')); 
-			
-			function checkProp
-			{
-
+			function checkProp(arg,prop){
+			if(arg.hasOwnProperty(prop)){
+			    return true;
+			}else return false;
 			}
-			console.log(checkProp({red: "red", green: "green", white: "white"}, "green")); //output true
+			console.log(checkProp({red: "red", green: "green", white: "white"}, "green"));
+			console.log(checkProp({red: "red", green: "green", white: "white"}, "black"));
 
 			</script>
 	</body>
